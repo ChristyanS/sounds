@@ -21,10 +21,14 @@
     "@angular/platform-browser": "5.2.11",
     "@angular/platform-browser-dynamic": "5.2.11",
     "@ionic-native/core": "~4.18.0",
+    "@ionic-native/native-audio": "^4.18.0",
     "@ionic-native/splash-screen": "~4.18.0",
     "@ionic-native/status-bar": "~4.18.0",
+    "@ionic-native/streaming-media": "^4.18.0",
     "@ionic/pro": "2.0.4",
     "@ionic/storage": "2.2.0",
+    "cordova-plugin-nativeaudio": "3.0.9",
+    "cordova-plugin-streaming-media": "2.2.0",
     "ionic-angular": "3.9.2",
     "ionicons": "3.0.0",
     "rxjs": "5.5.11",
@@ -35,5 +39,11 @@
     "@ionic/app-scripts": "3.2.1",
     "typescript": "~2.6.2"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-nativeaudio": {},
+      "cordova-plugin-streaming-media": {}
+    }
+  }
 }
