@@ -3,12 +3,12 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>Nerit Sounds</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>NeritSounds</h3>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <button ion-button  (click)="play('naruto','assets/sounds/narutoSound.mp3')" >TURURU</button>
+  <button ion-button  (click)="play('xfiles','assets/sounds/xfiles.mp3')" >XFILES</button>
+  <button ion-button  (click)="play('ayrtonSenna','assets/sounds/ayrtonSenna.mp3')" >ayrton Senna</button>
 </ion-content>
