@@ -8,7 +8,57 @@
 </ion-header>
 
 <ion-content padding>
-  <button ion-button  (click)="play('naruto','assets/sounds/narutoSound.mp3')" >TURURU</button>
-  <button ion-button  (click)="play('xfiles','assets/sounds/xfiles.mp3')" >XFILES</button>
-  <button ion-button  (click)="play('ayrtonSenna','assets/sounds/ayrtonSenna.mp3')" >ayrton Senna</button>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+        <button ion-button full (click)="play('naruto','assets/sounds/narutoSound.mp3')">
+          <ion-icon name="leaf"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col col-6>
+        <button ion-button full (click)="play('xfiles','assets/sounds/xfiles.mp3')">
+          <ion-icon name="folder-open"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6>
+        <button ion-button full (click)="play('ayrtonSenna','assets/sounds/ayrtonSenna.mp3')">
+          <ion-icon name="trophy"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col col-6>
+        <button ion-button full
+                (click)="play('turnDownForWhat','assets/sounds/turnDownForWhat.mp3')">
+          <ion-icon name="glasses"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6>
+        <button ion-button full (click)="play('pracaNossa','assets/sounds/pracaNossa.mp3')">
+          <ion-icon name="happy"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col col-6>
+        <button ion-button full
+                (click)="play('errou','assets/sounds/errou.mp3')">
+          <ion-icon name="bug"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6>
+        <button ion-button full (click)="play('marchaImperial','assets/sounds/marchaImperial.mp3')">
+          <ion-icon name="ionitron"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col col-6>
+        <button ion-button full
+                (click)="play('globo','assets/sounds/globo.mp3')">
+          <ion-icon name="videocam"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
