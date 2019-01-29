@@ -62,10 +62,43 @@ ion-icon {
   &[class*="custom-sheriff"] {
     mask-image: url(../assets/icon/sheriff.svg);
   }
+
   &[class*="custom-bench"] {
     mask-image: url(../assets/icon/bench.svg);
   }
+
   &[class*="custom-error"] {
     mask-image: url(../assets/icon/error.svg);
   }
+
+  &[class*="custom-fire"] {
+    mask-image: url(../assets/icon/fire.svg);
+  }
+
+  &[class*="custom-cowboy-hat"] {
+    mask-image: url(../assets/icon/cowboyHat.svg);
+  }
+
+  &[class*="custom-harry-potter"] {
+    mask-image: url(../assets/icon/harrypotter.svg);
+  }
+  &[class*="custom-harry-potter-logo"] {
+    mask-image: url(../assets/icon/harryPotterlogo.svg);
+  }
+  &[class*="custom-goku"] {
+    mask-image: url(../assets/icon/goku.svg);
+  }
+  &[class*="custom-R2D2"] {
+    mask-image: url(../assets/icon/R2D2.svg);
+  }
+  &[class*="custom-drum"] {
+    mask-image: url(../assets/icon/Drum.svg);
+  }
+  &[class*="custom-titanic"] {
+    mask-image: url(../assets/icon/titanic.svg);
+  }
+  &[class*="custom-continued"] {
+    mask-image: url(../assets/icon/continued.svg);
+  }
+
 }

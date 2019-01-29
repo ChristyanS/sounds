@@ -22,8 +22,14 @@ export class HomePage {
     this.sounds.push(new Sound('7', 'assets/sounds/globo.mp3', 'custom-globo'))
     this.sounds.push(new Sound('8', 'assets/sounds/missaoImposivel.mp3', 'custom-spy'))
     this.sounds.push(new Sound('9', 'assets/sounds/faroeste.mp3', 'custom-sheriff'))
-
-
+    this.sounds.push(new Sound('10', 'assets/sounds/pegandoFogoBicho.mp3', 'custom-fire'))
+    this.sounds.push(new Sound('11', 'assets/sounds/aquiTemCoragem.mp3', 'custom-cowboy-hat'))
+    this.sounds.push(new Sound('12', 'assets/sounds/harryPotter.mp3', 'custom-harry-potter-logo'))
+    this.sounds.push(new Sound('13', 'assets/sounds/mais8000.mp3', 'custom-goku'))
+    this.sounds.push(new Sound('14', 'assets/sounds/R2D2Scream.mp3', 'custom-R2D2'))
+    this.sounds.push(new Sound('15', 'assets/sounds/rufemOsTambores.mp3', 'custom-drum'))
+    this.sounds.push(new Sound('16', 'assets/sounds/narutoRisingSpirit.mp3', 'custom-naruto'))
+    this.sounds.push(new Sound('17', 'assets/sounds/titanic.mp3', 'custom-titanic'))
   }
 
   /**
