@@ -12,24 +12,45 @@ export class HomePage {
   private currentSoundID: string;
 
   constructor(public nativeAudio: NativeAudio, public platform: Platform) {
-    this.sounds.push(new Sound('0', 'assets/sounds/narutoSound.mp3', 'custom-naruto'))
-    this.sounds.push(new Sound('1', 'assets/sounds/xfiles.mp3', 'custom-xfiles'))
-    this.sounds.push(new Sound('2', 'assets/sounds/ayrtonSenna.mp3', 'custom-formula1'))
-    this.sounds.push(new Sound('3', 'assets/sounds/turnDownForWhat.mp3', 'custom-glasses'))
-    this.sounds.push(new Sound('4', 'assets/sounds/pracaNossa.mp3', 'custom-bench'))
-    this.sounds.push(new Sound('5', 'assets/sounds/errou.mp3', 'custom-error'))
-    this.sounds.push(new Sound('6', 'assets/sounds/marchaImperial.mp3', 'custom-darth-vader'))
-    this.sounds.push(new Sound('7', 'assets/sounds/globo.mp3', 'custom-globo'))
-    this.sounds.push(new Sound('8', 'assets/sounds/missaoImposivel.mp3', 'custom-spy'))
-    this.sounds.push(new Sound('9', 'assets/sounds/faroeste.mp3', 'custom-sheriff'))
-    this.sounds.push(new Sound('10', 'assets/sounds/pegandoFogoBicho.mp3', 'custom-fire'))
-    this.sounds.push(new Sound('11', 'assets/sounds/aquiTemCoragem.mp3', 'custom-cowboy-hat'))
-    this.sounds.push(new Sound('12', 'assets/sounds/harryPotter.mp3', 'custom-harry-potter-logo'))
-    this.sounds.push(new Sound('13', 'assets/sounds/mais8000.mp3', 'custom-goku'))
-    this.sounds.push(new Sound('14', 'assets/sounds/R2D2Scream.mp3', 'custom-R2D2'))
-    this.sounds.push(new Sound('15', 'assets/sounds/rufemOsTambores.mp3', 'custom-drum'))
-    this.sounds.push(new Sound('16', 'assets/sounds/narutoRisingSpirit.mp3', 'custom-naruto'))
-    this.sounds.push(new Sound('17', 'assets/sounds/titanic.mp3', 'custom-titanic'))
+    this.initialize()
+  }
+
+  getItems(event: any) {
+    this.initialize()
+    const val = event.target.value;
+
+    if (val && val.trim() != '') {
+      this.sounds = this.sounds.filter((sound) => {
+        return (sound.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
+      })
+    }
+  }
+
+  /**
+   * Inicializa todas as músicas do sistema
+   */
+  initialize() {
+    let sounds: Array<Sound> = new Array<Sound>();
+    sounds.push(new Sound('0', 'assets/sounds/narutoSound.mp3', 'custom-naruto', 'Sadness And Sorrow'));
+    sounds.push(new Sound('1', 'assets/sounds/xfiles.mp3', 'custom-xfiles', 'X Files'));
+    sounds.push(new Sound('2', 'assets/sounds/ayrtonSenna.mp3', 'custom-formula1', 'Ayrton Senna'));
+    sounds.push(new Sound('3', 'assets/sounds/turnDownForWhat.mp3', 'custom-glasses', 'Turn Down For What'));
+    sounds.push(new Sound('4', 'assets/sounds/pracaNossa.mp3', 'custom-bench', 'A Praça É Nossa'));
+    sounds.push(new Sound('5', 'assets/sounds/errou.mp3', 'custom-error', 'Faustão Errou'));
+    sounds.push(new Sound('6', 'assets/sounds/marchaImperial.mp3', 'custom-darth-vader', 'Marcha Imperial'));
+    sounds.push(new Sound('7', 'assets/sounds/globo.mp3', 'custom-globo', 'Plantão da Globo'));
+    sounds.push(new Sound('8', 'assets/sounds/missaoImposivel.mp3', 'custom-spy', 'Missão Impossível '));
+    sounds.push(new Sound('9', 'assets/sounds/faroeste.mp3', 'custom-sheriff', 'Faroeste'));
+    sounds.push(new Sound('10', 'assets/sounds/pegandoFogoBicho.mp3', 'custom-fire', 'Faustão Ta Pegando Fogo'));
+    sounds.push(new Sound('11', 'assets/sounds/aquiTemCoragem.mp3', 'custom-cowboy-hat', 'Aqui Tem Coragem'));
+    sounds.push(new Sound('12', 'assets/sounds/harryPotter.mp3', 'custom-harry-potter-logo', 'Harry Potter Main Theme'));
+    sounds.push(new Sound('13', 'assets/sounds/mais8000.mp3', 'custom-goku', 'Dragon Ball Mais De 8000'));
+    sounds.push(new Sound('14', 'assets/sounds/R2D2Scream.mp3', 'custom-R2D2', 'R2D2 Scream'));
+    sounds.push(new Sound('15', 'assets/sounds/rufemOsTambores.mp3', 'custom-drum', 'Rufem Os Tambores'));
+    sounds.push(new Sound('16', 'assets/sounds/narutoRisingSpirit.mp3', 'custom-naruto', 'Naruto Rising Spirit'));
+    sounds.push(new Sound('17', 'assets/sounds/titanic.mp3', 'custom-titanic', 'Titanic'));
+    sounds.push(new Sound('18', 'assets/sounds/toBeContinued.mp3', 'custom-continued', 'To be Continued'));
+    this.sounds = sounds
   }
 
   /**
@@ -57,7 +78,6 @@ export class HomePage {
 
   }
 
-  cl
 
   /**
    * Metodo que descarrega um audio da memoria

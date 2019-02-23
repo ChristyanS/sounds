@@ -6,13 +6,14 @@
 
 <ion-content padding>
   <ion-grid>
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
     <ion-row *ngFor="let sound of sounds;let i=index;">
       <ion-col col-6 *ngIf='(i)%2==0'>
         <button ion-button full (click)="play(sounds[i].id,sounds[i].path)">
           <ion-icon name='{{sounds[i].icon}}'></ion-icon>
         </button>
       </ion-col>
-      <ion-col col-6 *ngIf='(i+1)%2==1'>
+      <ion-col col-6 *ngIf='(i+1)%2==1&&i<sounds.length-1'>
         <button ion-button full (click)="play(sounds[i+1].id,sounds[i+1].path)">
           <ion-icon name='{{sounds[i+1].icon}}'></ion-icon>
         </button>
