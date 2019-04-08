@@ -15,8 +15,12 @@ export class HomePage {
     this.initialize()
   }
 
-  getItems(event: any) {
-    this.initialize()
+  /**
+   * Filtra a coleção para mostrar músicas de acordo com uma string de busca
+   * @param event
+   */
+  search(event: any) {
+    this.initialize();
     const val = event.target.value;
 
     if (val && val.trim() != '') {
@@ -50,7 +54,21 @@ export class HomePage {
     sounds.push(new Sound('16', 'assets/sounds/narutoRisingSpirit.mp3', 'custom-naruto', 'Naruto Rising Spirit'));
     sounds.push(new Sound('17', 'assets/sounds/titanic.mp3', 'custom-titanic', 'Titanic'));
     sounds.push(new Sound('18', 'assets/sounds/toBeContinued.mp3', 'custom-continued', 'To be Continued'));
+    sounds.push(new Sound('19', 'assets/sounds/globoEsporte.mp3', 'custom-soccer', 'Esporte Espetacular'));
+    sounds.push(new Sound('20', 'assets/sounds/berrante.mp3', 'custom-ox', 'Berrante'));
+    sounds.push(new Sound('21', 'assets/sounds/differentStrokes.mp3', 'custom-sam', 'Different Strokes'));
+    sounds.push(new Sound('22', 'assets/sounds/shootingStars.mp3', 'custom-star', 'Shooting Stars'));
+    sounds.push(new Sound('23', 'assets/sounds/circus.mp3', 'custom-circus', 'Circo'));
     this.sounds = sounds
+  }
+
+  /**
+   * Metodo que reproduz um audio aleatóriamente
+   */
+  async random() {
+    let random = Math.floor(Math.random() * this.sounds.length);
+    console.log('Audio aleatorio');
+    await this.play(this.sounds[random].id, this.sounds[random].path);
   }
 
   /**
@@ -68,9 +86,9 @@ export class HomePage {
       await this.preload(id, path);
       await this.nativeAudio.play(id).then((success) => {
         console.log('Audio reproduzindo com sucesso ' + success);
-      }), (error) => {
+      }, (error) => {
         console.log('Ocorreu algum erro ao reproduzir o audio' + error);
-      };
+      });
       this.currentSoundID = id;
     } else {
       console.log('Essa funcionalidade está disponível apenas para dispositivos móveis');

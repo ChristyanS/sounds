@@ -101,5 +101,22 @@ ion-icon {
   &[class*="custom-continued"] {
     mask-image: url(../assets/icon/continued.svg);
   }
-
+  &[class*="custom-soccer"] {
+    mask-image: url(../assets/icon/soccer.svg);
+  }
+  &[class*="custom-ox"] {
+    mask-image: url(../assets/icon/ox.svg);
+  }
+  &[class*="custom-castle-crashed"] {
+    mask-image: url(../assets/icon/castle.svg);
+  }
+  &[class*="custom-star"] {
+    mask-image: url(../assets/icon/star.svg);
+  }
+  &[class*="custom-circus"] {
+    mask-image: url(../assets/icon/circus.svg);
+  }
+  &[class*="custom-sam"] {
+    mask-image: url(../assets/icon/sam.svg);
+  }
 }
