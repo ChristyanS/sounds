@@ -50,7 +50,7 @@ export class HomePage {
     sounds.push(new Sound('12', 'assets/sounds/harryPotter.mp3', 'custom-harry-potter-logo', 'Harry Potter Main Theme'));
     sounds.push(new Sound('13', 'assets/sounds/mais8000.mp3', 'custom-goku', 'Dragon Ball Mais De 8000'));
     sounds.push(new Sound('14', 'assets/sounds/R2D2Scream.mp3', 'custom-R2D2', 'R2D2 Scream'));
-    sounds.push(new Sound('15', 'assets/sounds/rufemOsTambores.mp3', 'custom-drum', 'Rufem Os Tambores'));
+    sounds.push(new Sound('15', 'assets/sounds/rufemOsTambores.mp3', 'custom-drum', 'Rufém Os Tambores'));
     sounds.push(new Sound('16', 'assets/sounds/narutoRisingSpirit.mp3', 'custom-naruto', 'Naruto Rising Spirit'));
     sounds.push(new Sound('17', 'assets/sounds/titanic.mp3', 'custom-titanic', 'Titanic'));
     sounds.push(new Sound('18', 'assets/sounds/toBeContinued.mp3', 'custom-continued', 'To be Continued'));
@@ -59,6 +59,10 @@ export class HomePage {
     sounds.push(new Sound('21', 'assets/sounds/differentStrokes.mp3', 'custom-sam', 'Different Strokes'));
     sounds.push(new Sound('22', 'assets/sounds/shootingStars.mp3', 'custom-star', 'Shooting Stars'));
     sounds.push(new Sound('23', 'assets/sounds/circus.mp3', 'custom-circus', 'Circo'));
+    sounds.push(new Sound('24', 'assets/sounds/spongebobDisappointed.mp3', 'custom-sponge2', 'Bob Esponja Desapontado'));
+    sounds.push(new Sound('25', 'assets/sounds/rockyTheme.mp3', 'custom-box', 'Rocky Theme'));
+    sounds.push(new Sound('26', 'assets/sounds/eyeOfTheTiger.mp3', 'custom-tiger', 'Eye Of The Tiger'));
+    sounds.push(new Sound('27', 'assets/sounds/aFewMomentsLater.mp3', 'custom-sponge', 'A Few Momments Later'));
     this.sounds = sounds
   }
 

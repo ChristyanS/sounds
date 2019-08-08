@@ -119,4 +119,19 @@ ion-icon {
   &[class*="custom-sam"] {
     mask-image: url(../assets/icon/sam.svg);
   }
+  &[class*="custom-spongebob"]{
+    mask-image: url(../assets/icon/spongebob.svg);
+  }
+  &[class*="custom-sponge"]{
+    mask-image: url(../assets/icon/sponge.svg);
+  }
+  &[class*="custom-sponge2"]{
+    mask-image: url(../assets/icon/sponge2.svg);
+  }
+  &[class*="custom-box"]{
+    mask-image: url(../assets/icon/box.svg);
+  }
+  &[class*="custom-tiger"]{
+    mask-image: url(../assets/icon/tiger.svg);
+  }
 }
