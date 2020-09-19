@@ -24,14 +24,29 @@ sudo apt install nodejs
 ```
 npm install -g cordova
 ```
+3. Instalar o Ionic
+```
+npm install -g @ionic/cli
+```
 
 ## Executando
-
-Explain how to run the automated tests for this system
+Para executar o aplicativo no navegador:
+1. Instale as dependecias
+```
+npm i
+```
+Vá para o diretório do aplicativo ionic:
+```
+cd app
+```
+Inicie o servidor:
+```
+ionic serve
+```
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Ainda não possui deploy para a google play e app store
 
 ## Built With
 
