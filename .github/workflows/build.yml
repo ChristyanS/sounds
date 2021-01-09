@@ -20,5 +20,5 @@ jobs:
           cordova-version: 8
 
       - name: Build
-        run: |
+        run: cd app|
           ionic cordova build android --prod
