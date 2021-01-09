@@ -19,10 +19,11 @@ jobs:
         with:
           cordova-version: 8
 
-      - name: Change directory
-        run: |
-          ls
+      - name: Install Dependencies
+        run: npm i
+        
+      - name: Change Directory
+        run: cd app
           
       - name: Build
-        run: |
-          ionic cordova build android --prod
+        run: ionic cordova build android --prod
