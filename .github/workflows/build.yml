@@ -21,7 +21,7 @@ jobs:
 
       - name: Change directory
         run: |
-          cd app
+          ls
           
       - name: Build
         run: |
