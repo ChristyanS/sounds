@@ -19,6 +19,10 @@ jobs:
         with:
           cordova-version: 8
 
+      - name: Change directory
+        run: |
+          cd app
+          
       - name: Build
-        run: cd app|
+        run: |
           ionic cordova build android --prod
