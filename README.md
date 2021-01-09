@@ -4,7 +4,8 @@
 [![TypeScript](https://img.shields.io/npm/types/typescript)](https://www.typescriptlang.org) 
 [![Cordova](https://img.shields.io/npm/v/cordova?label=cordova)](https://cordova.apache.org) 
 
-Já pensou em utilizar sons engraçados para as mais diversas situações do dia a dia, com Sounds você tornará isso realidade. Esse sistema conta com vários botões que ativam sons por um breve periódo de tempo. Quando comecei esse projeto recordei muito dos momentos em que a Sam (personagem de Icarly) utilizava um controle estranho para chamar o classico som "Dança Maluca". 
+Já pensou em utilizar sons engraçados para as mais diversas situações do dia a dia, com Sounds você tornará isso realidade. Esse sistema conta com vários botões que ativam sons por um breve periódo de tempo. Quando comecei esse projeto recordei muito dos momentos em que a Sam (personagem de Icarly) utilizava um controle estranho para chamar o classico som "Dança Maluca".
+
 ![App Image](https://i.ibb.co/sqRW9qQ/sounds.png)
 ## Começando
 
