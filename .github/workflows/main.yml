@@ -27,8 +27,6 @@ jobs:
 
       - name: Setup Ionic
         uses: coturiv/setup-ionic@v1.0.3
-        with:
-          ionic-version: 6.12.3
           
       - name: Install dependencies
         working-directory: ./app
