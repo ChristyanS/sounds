@@ -31,11 +31,5 @@ jobs:
           ionic-version: 6.12.3
           
       - name: Change folder
-        run: cd app
-      
-      - name: Print folder
-        run: ls
-          
-      - name: Build
-        run: |
-          ionic cordova build android --prod:  
+        working-directory: ./app
+        run:  ls
