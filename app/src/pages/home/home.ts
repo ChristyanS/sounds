@@ -63,6 +63,9 @@ export class HomePage {
     sounds.push(new Sound('25', 'assets/sounds/rockyTheme.mp3', 'custom-box', 'Rocky Theme'));
     sounds.push(new Sound('26', 'assets/sounds/eyeOfTheTiger.mp3', 'custom-tiger', 'Eye Of The Tiger'));
     sounds.push(new Sound('27', 'assets/sounds/aFewMomentsLater.mp3', 'custom-sponge', 'A Few Momments Later'));
+    sounds.push(new Sound('28', 'assets/sounds/CeTaBrabo.mp3', 'custom-naruto', 'Cê Ta Brabo?'));
+    sounds.push(new Sound('27', 'assets/sounds/PauNaMaquina.mp3', 'desktop', 'Pau na Maquina'));
+
     this.sounds = sounds
   }
 
