@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b94892ea-3f9d-4c0a-8ae4-e633a012fd86" name="Default Changelist" comment="Adição de sons.&#10;&#10;Essa versão contem:&#10;. Som &quot;Cê ta brabo?&quot;&#10;. Som &quot;Pau na máquina&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/pages/home/home.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/home/home.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +12,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -132,7 +138,7 @@
       <workItem from="1610168680570" duration="3831000" />
       <workItem from="1610172896153" duration="358000" />
       <workItem from="1610216622715" duration="1795000" />
-      <workItem from="1610243520514" duration="1199000" />
+      <workItem from="1610243520514" duration="2371000" />
     </task>
     <task id="LOCAL-00001" summary="Adição de sons.&#10;&#10;Essa versão contem:&#10;. Som &quot;Cê ta brabo?&quot;&#10;. Som &quot;Pau na máquina&quot;">
       <created>1610169731770</created>
@@ -141,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610169731770</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adição de sons.&#10;&#10;Essa versão contem:&#10;. Som &quot;Cê ta brabo?&quot;&#10;. Som &quot;Pau na máquina&quot;">
+      <created>1610244984395</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610244984395</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
