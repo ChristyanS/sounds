@@ -25,13 +25,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: Setup Ionic
-        uses: coturiv/setup-ionic@v1.0.3
-          
-      - name: Install dependencies
-        working-directory: ./app
-        run:  npm i
-        
-      - name: Build
-        working-directory: ./app
-        run:  ionic cordova build android
+      - name: Build Android on Appflow
+        uses: ionic-team/appflow-build@v1
+        with:
+          app-id: abcdef12
+          platform: Android
+          build-type: debug
+          environment: MyEnvironment
+          upload-artifact: Android-Build.zip
